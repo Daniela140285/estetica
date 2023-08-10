@@ -25,27 +25,30 @@
 .logo_titulo{
     color: #b42c8dce;
 }
-.nav_container{
-    text-transform: uppercase;  
-}
 .nav_links{
+    text-transform: uppercase;  
     width: 90%;
     margin: 0 auto;
 }
 .nav_links li{
     width: 400px;
     text-align: center;
-    display: inline-block;
+    display: inline-block;  /*para que se pongan uno al lado del otro */ 
     padding: 10px 20px;
     position: relative;
 }
 .nav_links li a{
-    /* display: block; */
+    display: block;  /*para que se comporten como elemento en bloque*/
     color: black;
+}
+.nav_links li a:hover{
+    color: #b42c8dce;
+    transition: all .3s;
 }
 .nav_vertical{
     position: absolute;
     display: none;
+    z-index: 1;
 }
 .nav_links li:hover .nav_vertical{
     display: block;
@@ -132,6 +135,7 @@
 }
 .informacion_logo h2{
     color: rgb(97, 96, 96);
+    font-size: 50px;
 }
 .informacion_text{
     width: 600px;
@@ -150,12 +154,12 @@
 .final{
     display: flex;
     width: 100%;
-    margin: 0 auto;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-image: linear-gradient(to top, #fbc2eb98 0%, #a6c0ee96 100%);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);;
 }
 .final a{
     display: flex;
@@ -166,9 +170,9 @@
     padding: 20px;
 }
 .final i{
-    font-size: 40px;
+    font-size: 30px;
 }
 .firma{
     text-align: center;
-    color: rgb(61, 60, 60);
+    font-size: 12px;
 }
